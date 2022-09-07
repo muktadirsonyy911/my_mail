@@ -15,11 +15,9 @@ class SignUpView extends GetView<SignUpController> {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
-
     return Scaffold(
-        appBar: GlobalWidgets.defaultAppBar(title: 'Sign Up'),
+        appBar: GlobalWidgets.defaultAppBar(),
         backgroundColor: scaffoldBackGroundColor,
         body: Center(
           child: SingleChildScrollView(
@@ -36,6 +34,8 @@ class SignUpView extends GetView<SignUpController> {
                         style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                       ),
                     ),
+                    SizedBox(height: width * 0.05),
+                    const Text('Sign up with your valid mail'),
                     SizedBox(height: width * 0.2),
                     emailFieldWidget,
                     SizedBox(height: width * 0.05),
@@ -87,7 +87,7 @@ class SignUpView extends GetView<SignUpController> {
               contentPadding: const EdgeInsets.all(15.0),
               border: InputBorder.none,
               hintText: 'example@gmail.com',
-              hintStyle: const TextStyle(color: hintColor, fontSize: 15),
+              hintStyle:  TextStyle(color: hintColor, fontSize: 15),
             ),
             keyboardType: TextInputType.emailAddress,
             validator: (String? value) {
@@ -138,7 +138,7 @@ class SignUpView extends GetView<SignUpController> {
                 contentPadding: const EdgeInsets.all(15),
                 border: InputBorder.none,
                 hintText: '********',
-                hintStyle: const TextStyle(color: hintColor, fontSize: 15),
+                hintStyle:  TextStyle(color: hintColor, fontSize: 15),
                 suffixIcon: InkWell(
                   child: Icon(
                     controller.icon,
