@@ -64,3 +64,8 @@ Here is the link of apk:
 
 https://drive.google.com/drive/u/0/folders/1ntOS4LpxW3AyMrt_ieGin46J6JGJq8Ie
 
+Login credentials:
+
+email: muktadir@emergentvillage.org
+password: 123456
+
