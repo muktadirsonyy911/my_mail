@@ -34,7 +34,7 @@ class LoginController extends GetxController {
     UserModel user = UserModel.fromJson(userData);
     await StorageProvider.object.setUserToken(token);
     await StorageProvider.object.setUserData(user);
-    Get.toNamed(Routes.message);
+    Get.offAllNamed(Routes.message);
     GlobalWidgets.showCustomSnackBar('You are successfully logged in', isError: false, duration: 3);
   }
 }

@@ -8,7 +8,6 @@ import 'package:my_mail/app/data/global_widgets/global_widgets.dart';
 import 'package:my_mail/app/data/providers/storage_provider.dart';
 import 'package:my_mail/app/modules/message/components/message_widget.dart';
 import 'package:my_mail/app/routes/app_pages.dart';
-
 import '../controllers/message_controller.dart';
 
 class MessageView extends GetView<MessageController> {

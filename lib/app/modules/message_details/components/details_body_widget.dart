@@ -116,7 +116,11 @@ class DetailsBodyWidget extends StatelessWidget {
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
-                        color: Colors.black12,
+                        margin: EdgeInsets.only(right: 10),
+                        decoration: BoxDecoration(
+                          color: Colors.black12,
+                         borderRadius: BorderRadius.circular(5.0)
+                        ),
                         height: width * 0.2,
                         width: width * 0.3,
                         child: Center(

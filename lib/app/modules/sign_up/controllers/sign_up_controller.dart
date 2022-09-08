@@ -16,10 +16,10 @@ class SignUpController extends GetxController {
         Get.back();
         if (responseData?.id != null) {
           GlobalWidgets.showCustomSnackBar('Registration has successfully been completed',
-              isError: false);
+              isError: false, duration: 3);
           Get.toNamed(Routes.login);
         } else {
-          GlobalWidgets.showCustomSnackBar('${responseData?.detail}', isError: true);
+          GlobalWidgets.showCustomSnackBar('${responseData?.detail}', isError: true, duration: 3);
         }
       });
     } catch (e) {
